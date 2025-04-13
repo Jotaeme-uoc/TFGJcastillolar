@@ -16,4 +16,14 @@ public class Var : MonoBehaviour
         value = inputValue.text;
         return name + " = " + value + "\n";
     }
+
+    public string getName()
+    {
+        return inputName.text;
+    }
+
+    public string getValue()
+    {
+        return inputValue.text;
+    }
 }
