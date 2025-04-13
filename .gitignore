@@ -24,7 +24,6 @@ UserSettings/
 Thumbs.db
 
 # Builds
-*.apk
 *.aab
 *.exe
 *.app
