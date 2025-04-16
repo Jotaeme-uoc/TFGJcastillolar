@@ -17,6 +17,13 @@ public class Var : MonoBehaviour
         return name + " = " + value + "\n";
     }
 
+    public void Destroy()
+    {
+        // Destroy the GameObject when the script is destroyed
+        Destroy(gameObject);
+    }
+
+
     public string getName()
     {
         return inputName.text;
