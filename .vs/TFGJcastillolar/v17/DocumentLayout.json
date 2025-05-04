@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\assets\\scripts\\var.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\var.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|c:\\users\\xus93\\documents\\github\\tfgjcastillolar\\assets\\resources\\scripts\\managers\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\scripts\\managers\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|c:\\users\\xus93\\documents\\github\\tfgjcastillolar\\assets\\scripts\\logicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\logicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|c:\\users\\xus93\\documents\\github\\tfgjcastillolar\\assets\\resources\\scripts\\managers\\logicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\scripts\\managers\\logicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Scripts\\CodeManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\CodeManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|c:\\users\\xus93\\documents\\github\\tfgjcastillolar\\assets\\resources\\scripts\\managers\\theorytextmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\scripts\\managers\\theorytextmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|c:\\users\\xus93\\documents\\github\\tfgjcastillolar\\assets\\resources\\scripts\\managers\\scenemanagers\\exercisescenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\scripts\\managers\\scenemanagers\\exercisescenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|c:\\users\\xus93\\documents\\github\\tfgjcastillolar\\assets\\resources\\scripts\\managers\\exercisetextmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\scripts\\managers\\exercisetextmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,45 +29,72 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 178,
           "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CodeManager.cs",
-              "DocumentMoniker": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Scripts\\CodeManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CodeManager.cs",
-              "ToolTip": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Scripts\\CodeManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CodeManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "LogicManager.cs",
+              "DocumentMoniker": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Resources\\Scripts\\Managers\\LogicManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Resources\\Scripts\\Managers\\LogicManager.cs",
+              "ToolTip": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Resources\\Scripts\\Managers\\LogicManager.cs",
+              "RelativeToolTip": "Assets\\Resources\\Scripts\\Managers\\LogicManager.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowCEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T17:01:32.834Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Var.cs",
-              "DocumentMoniker": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Scripts\\Var.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Var.cs",
-              "ToolTip": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Scripts\\Var.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Var.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T17:02:21.853Z",
+              "WhenOpened": "2025-05-04T17:39:33.746Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LogicManager.cs",
-              "DocumentMoniker": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Scripts\\LogicManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\LogicManager.cs",
-              "ToolTip": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Scripts\\LogicManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\LogicManager.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowCoAAAAeAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "UiManager.cs",
+              "DocumentMoniker": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Resources\\Scripts\\Managers\\UiManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Resources\\Scripts\\Managers\\UiManager.cs",
+              "ToolTip": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Resources\\Scripts\\Managers\\UiManager.cs",
+              "RelativeToolTip": "Assets\\Resources\\Scripts\\Managers\\UiManager.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAYwGIAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T17:02:20.355Z",
+              "WhenOpened": "2025-05-04T17:29:22.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExerciseSceneManager.cs",
+              "DocumentMoniker": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Resources\\Scripts\\Managers\\SceneManagers\\ExerciseSceneManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Resources\\Scripts\\Managers\\SceneManagers\\ExerciseSceneManager.cs",
+              "ToolTip": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Resources\\Scripts\\Managers\\SceneManagers\\ExerciseSceneManager.cs",
+              "RelativeToolTip": "Assets\\Resources\\Scripts\\Managers\\SceneManagers\\ExerciseSceneManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T16:56:59.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TheoryTextManager.cs",
+              "DocumentMoniker": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Resources\\Scripts\\Managers\\TheoryTextManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Resources\\Scripts\\Managers\\TheoryTextManager.cs",
+              "ToolTip": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Resources\\Scripts\\Managers\\TheoryTextManager.cs",
+              "RelativeToolTip": "Assets\\Resources\\Scripts\\Managers\\TheoryTextManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T16:44:06.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ExerciseTextManager.cs",
+              "DocumentMoniker": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Resources\\Scripts\\Managers\\ExerciseTextManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Resources\\Scripts\\Managers\\ExerciseTextManager.cs",
+              "ToolTip": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Resources\\Scripts\\Managers\\ExerciseTextManager.cs",
+              "RelativeToolTip": "Assets\\Resources\\Scripts\\Managers\\ExerciseTextManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T16:42:57Z",
               "EditorCaption": ""
             }
           ]

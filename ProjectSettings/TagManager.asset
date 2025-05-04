@@ -7,6 +7,12 @@ TagManager:
   - Var
   - Name
   - Value
+  - Method
+  - Field
+  - UIManager
+  - Warning
+  - Undefined
+  - Returner
   layers:
   - Default
   - TransparentFX

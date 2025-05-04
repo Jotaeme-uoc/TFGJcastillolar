@@ -1,0 +1,50 @@
+[
+    {
+        "key": "Button_Next",
+        "value": "Siguiente"
+    },
+    {
+        "key": "Button_No",
+        "value": "No"
+    },
+    {
+        "key": "Button_Previous",
+        "value": "Anterior"
+    },
+    {
+        "key": "Button_Yes",
+        "value": "Si"
+    },
+    {
+        "key": "Check_Home",
+        "value": "¿Realmente quieres salir? Se perderá todo el progreso del ejercicio"
+    },
+    {
+        "key": "Hello_World_Theory",
+        "value": "A continuación, vas a escribir tu primer programa. El método “Print” es la salida de tu programa, y muestra por pantalla lo que escribas dentro. \nPara completar la siguiente lección, deberás escribir “¡Hola Mundo!” (Sin las comillas) dentro del método “Print” y pulsar el botón “Ejecutar” (Es el botón verde en la parte superior) \nNo te preocupes de momento por las zonas marcadas como “Variables” y “Código”. ¡Aprenderás muy pronto para qué sirven! \n"
+    },
+    {
+        "key": "Hello_World_Title",
+        "value": "¡Hola Mundo!"
+    },
+    {
+        "key": "Test_Button",
+        "value": "Test"
+    },
+    {
+        "key": "Test_Theory",
+        "value": "\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida ac diam eget interdum. Etiam consectetur elit ac sagittis aliquet. Sed facilisis ligula id augue aliquet sagittis. Nunc in nulla tellus. Fusce mi felis, facilisis a mauris non, scelerisque lacinia nulla. Phasellus tincidunt, urna iaculis tincidunt pretium, justo nisi interdum erat, id vulputate lorem lacus sit amet magna. Aenean iaculis viverra turpis, vitae fermentum lectus maximus vel. Mauris pulvinar nisi vitae nisi dapibus, a vestibulum metus consequat. Morbi fermentum suscipit dictum.\nIn hac habitasse platea dictumst. Proin eu ultrices mi, at suscipit odio. Mauris vitae mauris quam. Vivamus imperdiet diam ac mattis mattis. Duis scelerisque volutpat nisi, non semper urna convallis eu. Suspendisse sodales efficitur felis at tincidunt. Vivamus metus ex, fermentum vitae consectetur at, lobortis non felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse pellentesque metus sit amet lobortis luctus. Sed sit amet justo non leo molestie iaculis et at nisl. Nulla feugiat risus sed quam consequat ullamcorper. Nulla tristique, urna ac tristique efficitur, nisi lacus faucibus eros, blandit porttitor sem ex quis eros. Morbi in lectus nisl. Donec aliquam et nunc sit amet cursus."
+    },
+    {
+        "key": "Test_Title",
+        "value": "Test"
+    },
+    {
+        "key": "Welcome_Theory",
+        "value": "\t ¡Bienvenido a \"Code Adventure\"! El objetivo de esta aplicación es enseñarte las bases de la programación de la manera más interactiva e intuitiva posible. \n El juego se compone de varias lecciones, en las que irás adquitiendo conocimientos de manera progresiva. \n Puedes usar esta aplicación de manera aislada, o junto a otros tutoriales o cursos de lenguajes específicos de programación. En caso de lo segundo, puedes usar las lecciones de la app para entender la parte lógica, y después centrarte en la gramática específica del lenguaje que estés aprendiendo. \n¡Vamos a ello!"
+    },
+    {
+        "key": "Welcome_Title",
+        "value": "¡Bienvenido!"
+    }
+]
