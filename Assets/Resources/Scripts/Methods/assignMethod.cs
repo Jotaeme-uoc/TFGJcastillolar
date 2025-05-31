@@ -1,18 +1,28 @@
 using TMPro;
 using UnityEngine;
 
-public class assignMethod : MonoBehaviour, Method
+public class AssignMethod : Method
 {
-    public TextMeshProUGUI var;
-    public TextMeshProUGUI value;
-
-    public string onExecute()
+    public AssignMethod(string var, string[] values) : base(var, values)
     {
-        return var.text + " = " + value.text + "\n";
+        this.opSymbol = " ";
+    }
+    private void Awake()
+    {
+        this.opSymbol = " ";
     }
 
-    public void Destroy()
+    override
+    public string onExecute()
     {
-        Destroy(gameObject);
+        if (float.TryParse(values[0].getText(), out float num) || values[0].getIsVar())
+        {
+            return var.getText() + " = " + values[0].getText() + "\n";
+        }
+        else
+        {
+            return var.getText() + " = \"" + values[0].getText() + "\"\n";
+        }
+        
     }
 }

@@ -7,14 +7,26 @@ public class Var : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private string name;
     private string value;
+    private bool isRandom;
     public TMP_InputField inputName;
     public TMP_InputField inputValue;
+    public GameObject deleteButton;
+    public Image background;
+    public Image isRandomIcon;
+
 
     public string onExecute()
     {
         name = inputName.text;
-        value = inputValue.text;
-        return name + " = " + value + "\n";
+        if (isRandom)
+        {
+            return name + " = ";
+        }
+        else
+        {
+            value = inputValue.text;
+            return name + " = " + value + "\n";
+        }
     }
 
     public void Destroy()
@@ -33,6 +45,11 @@ public class Var : MonoBehaviour
         return inputValue.text;
     }
 
+    public bool getIsRandom()
+    {
+        return isRandom;
+    }
+
     public void setName(string newName)
     {
         name = newName;
@@ -43,5 +60,19 @@ public class Var : MonoBehaviour
     {
         value = newValue;
         inputValue.text = newValue;
+    }
+
+    public void setAsInitial(bool isRandom)
+    {
+        this.isRandom = isRandom;
+        if (isRandom)
+        {
+            inputValue.gameObject.SetActive(false);
+            isRandomIcon.gameObject.SetActive(true);
+        }
+        inputName.interactable = false;
+        inputValue.interactable = false;
+        deleteButton.SetActive(false);
+        background.color = new Color(0.5f, 0.5f, 0.5f);
     }
 }

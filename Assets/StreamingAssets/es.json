@@ -1,5 +1,33 @@
 [
     {
+        "key": "Accept",
+        "value": "Aceptar"
+    },
+    {
+        "key": "AddMethod",
+        "value": "Suma"
+    },
+    {
+        "key": "AssignMethod",
+        "value": "Asignación"
+    },
+    {
+        "key": "Assign_Values_Theory1",
+        "value": "Como ya hemos visto, un programa informático se compone de entradas y salidas. En nuestro caso, las entradas son los valores iniciales de las variables, y las salidas el método “Imprimir”. Ahora toca preguntarnos ¿Qué ocurre en mitad de ambas?"
+    },
+    {
+        "key": "Assign_Values_Theory2",
+        "value": "Las entradas se modifican mediante operaciones para procesarlas y hacer c\u00E1lculos. Para crear una operaci\u00F3n, deber\u00E1s pulsar el bot\u00F3n \u201C+\u201D en el apartado de c\u00F3digo, y seleccionar la operaci\u00F3n que deseas crear. \r\nDichas operaciones se realizan de manera secuencial, no simult\u00E1nea. Es decir, la primera se resuelve por completo antes de la segunda, y as\u00ED sucesivamente\r\n "
+    },
+    {
+        "key": "Assign_Values_Theory3",
+        "value": "Nuestra primera operación será la asignación. Permite asignar un nuevo valor a una variable ya existente. Esto borra el valor que hubiera anteriormente."
+    },
+    {
+        "key": "Assign_Values_Title",
+        "value": "Tu primera operación: La asignación"
+    },
+    {
         "key": "Button_Next",
         "value": "Siguiente"
     },
@@ -17,27 +45,427 @@
     },
     {
         "key": "Check_Home",
-        "value": "¿Realmente quieres salir? Se perderá todo el progreso del ejercicio"
+        "value": "¿Realmente quieres salir? Se perderá todo el progreso de la lección."
+    },
+    {
+        "key": "Choose_Method_List",
+        "value": "Selecciona un método de la lista"
+    },
+    {
+        "key": "Choose_Option",
+        "value": "Elige una opción"
+    },
+    {
+        "key": "Choose_Var_List",
+        "value": "Selecciona una variable de la lista"
+    },
+    {
+        "key": "DivideMethod",
+        "value": "División"
+    },
+    {
+        "key": "Error_VarCreationExercise1",
+        "value": "Debes crear una variable para imprimirla"
+    },
+    {
+        "key": "Fail",
+        "value": "¡Ejercicio incorrecto!"
+    },
+    {
+        "key": "Formulation_Assign_Values_Exercise",
+        "value": "Tenemos una variable x, con un valor inicial de 3. Cambia dicho valor a 5 con una operación de asignación."
+    },
+    {
+        "key": "Formulation_HelloWorld_Exercise1",
+        "value": "Introduce el texto que quieras dentro del campo del método imprimir para mostrarlo por pantalla.\r\nNo te preocupes de momento por las zonas marcadas como “Variables” y “Código”. ¡Aprenderás muy pronto para qué sirven!\r\n El texto deberá introducirse entre comillas (Por ejemplo, si quieres que el programa muestre la palabra hola por pantalla, deberás escribir \"hola\""
+    },
+    {
+        "key": "Formulation_HelloWorld_Exercise2",
+        "value": "Ahora, prueba a imprimir el texto “¡Hola Mundo!” (Tal como aparece, con las comillas y los signos de exclamación). \r\nEscribir este texto es una tradición entre las personas que aprender a programar. ¡Ahora te toca a ti!\r\n"
+    },
+    {
+        "key": "Formulation_ModOperation_Exercise1",
+        "value": "Imprime por pantalla el resto de la división de “x” entre “y”"
+    },
+    {
+        "key": "Formulation_ModOperation_Exercise2",
+        "value": "Usando sólo la operación módulo, imprime una variable cuyo valor sea 0 "
+    },
+    {
+        "key": "Formulation_ModOperation_Exercise3",
+        "value": "Usando sólo la operación módulo, imprime una variable cuyo valor sea 0 "
+    },
+    {
+        "key":"Formulation_Operations_Problem",
+        "value": "Intercambia el valor de las dos variables que te proporcionamos. Recuerda que no puedes asignar los valores directamente, puesto que son aleatorios. \r\nNo tienes acceso a la operaci\u00F3n de asignaci\u00F3n.\r\n"
+    },
+    {
+        "key": "Formulation_OtherOperations_Exercise1",
+        "value": "Suma 10 a la variable “x”, multiplícala por “y” e imprime el resultado."
+    },
+    {
+        "key": "Formulation_OtherOperations_Exercise2",
+        "value": "Eleva la variable “x” al cuadrado e imprime el resultado."
+    },
+    {
+        "key": "Formulation_OtherOperations_Exercise3",
+        "value": "Usando todas las operaciones que quieras, pero sin asignar valores de manera directa, convierte la variable z en 4."
+    },
+    {
+        "key": "Formulation_OtherOperations_Exercise4",
+        "value": "Usando todas las operaciones que quieras, pero sin asignar valores de manera directa, convierte la variable z en 8."
+    },
+    {
+        "key": "Formulation_RandomVarsExercise",
+        "value": "Familiarizate con las variables aleatorias ejecutando el programa tres veces. Observa que cada vez se muestra un valor diferente."
+    },
+    {
+        "key": "Formulation_SameVarSum_Exercise",
+        "value": "Suma “4” al valor de “x” y almacénalo en la propia variable “x” para imprimirlo."
+    },
+    {
+        "key": "Formulation_SameVarSum_Exercise2",
+        "value": "Usando solo sumas, multiplica “x” por dos."
+    },
+    {
+        "key": "Formulation_SampleScene",
+        "value": "Para crear una variable, pulsa el símbolo + del apartado Variables.\nPara crear un método, pulsa el símbolo + del apartado métodos y selecciona qué método quieres crear.\nPara ejecutar el código, pulsa el botón de play en la parte inferior.\nLas interrogaciones son valores sin asignar, y pueden ser variables o números. Es necesario rellenarlos antes de ejecutar.\nEl método print es la salida del programa y muestra el valor que le pases por pantalla."
+    },
+    {
+        "key": "Formulation_Sum_Operation_Exercise",
+        "value": "Usa la operación suma para que la variable x valga 7"
+    },
+    {
+        "key": "Formulation_VarCreationExercise1",
+        "value": "Crea tu primera variable. Ponle un nombre válido y el valor numérico que quieras. Después, imprímela con el método “Print”."
+    },
+    {
+        "key": "Formulation_VarCreationExercise2",
+        "value": "Ahora, crea una variable que se llame “x” y cuyo valor numérico sea “7”. Imprímela con el método print."
+    },
+    {
+        "key": "Formulation_VarSum_Exercise",
+        "value": "Crea una variable llamada “sum”, que almacene la suma de las variables “x” e “y”, e imprímela. "
+    },
+    {
+        "key": "Formulation_Var_Assign_Exercise",
+        "value": "¡Veamos un ejemplo! Tenemos dos variables, “x” e “y”. Asigna el valor de “y” a “x” de manera que cuando se imprima, se muestre “5” por pantalla. (Pero sin asignar el valor “5” directamente a la variable)"
+    },
+    {
+        "key": "Formulation_Var_Assign_Problem",
+        "value": "Intercambia el valor de las dos variables que te proporcionamos. Recuerda que no puedes asignar los valores directamente, puesto que son aleatorios. "
+    },
+    {
+        "key":"Game_End",
+        "value": "\u00A1Felicidades! Has completado todo el contenido de \u201CCode Adventure\u201D. Se ha desbloqueado un modo de juego libre en el men\u00FA principal, con el que podr\u00E1s crear tus propios programas y experimentar con lo aprendido hasta ahora.\r\nEsperamos que hayas disfrutado y aprendido con esta experiencia. \r\n"
+    },
+    {
+        "key":"Game_End_Title",
+        "value": "\u00A1Felicidades!"
+    },
+    {
+        "key": "Hello_World",
+        "value": "¡Hola Mundo!"
+    },
+    {
+        "key": "Hello_World_Exercise_1_Res",
+        "value": ""
     },
     {
         "key": "Hello_World_Theory",
-        "value": "A continuación, vas a escribir tu primer programa. El método “Print” es la salida de tu programa, y muestra por pantalla lo que escribas dentro. \nPara completar la siguiente lección, deberás escribir “¡Hola Mundo!” (Sin las comillas) dentro del método “Print” y pulsar el botón “Ejecutar” (Es el botón verde en la parte superior) \nNo te preocupes de momento por las zonas marcadas como “Variables” y “Código”. ¡Aprenderás muy pronto para qué sirven! \n"
+        "value": "A continuaci\u00F3n, vas a escribir tu primer programa. El m\u00E9todo \u201CPrint\u201D es la salida de tu programa, y muestra por pantalla lo que escribas dentro.  El bot\u00F3n \u201CPlay\u201D, debajo de las operaciones, permite ejecutar el c\u00F3digo."
     },
     {
         "key": "Hello_World_Title",
         "value": "¡Hola Mundo!"
     },
     {
+        "key": "Home",
+        "value": "Volver al menu principal"
+    },
+    {
+        "key": "Insert_Manual_Value",
+        "value": "Introducir Valor Manualmente"
+    },
+    {
+        "key": "Insert_Name",
+        "value": "Introduce el nombre"
+    },
+    {
+        "key": "Insert_Value",
+        "value": "Introduce el valor"
+    },
+    {
+        "key": "Insert_Var_Name",
+        "value": "Inserta el nombre de la variable"
+    },
+    {
+        "key": "Lessons",
+        "value": "Lecciones"
+    },
+    {
+        "key": "Methods",
+        "value": "Operaciones"
+    },
+    {
+        "key": "ModMethod",
+        "value": "Módulo"
+    },
+    {
+        "key": "ModOperation_Theory",
+        "value": "Por último, veremos la operación módulo. Esta operación devuelve el resto de la división entera. Por ejemplo, la expresión “5%3” devuelve un 2 "
+    },
+    {
+        "key": "ModOperation_Title",
+        "value": "Operación módulo"
+    },
+    {
+        "key": "MultiplyMethod",
+        "value": "Multiplicación"
+    },
+    {
+        "key": "Next_Lesson",
+        "value": "Siguiente lección"
+    },
+    {
+        "key": "Operations_Problem_Formulation",
+        "value": "Para este problema deber\u00E1s, de nuevo, cambiar el valor de dos variables.\r\n\u00A1Pero esta vez no podr\u00E1s usar operaciones de asignaci\u00F3n, ni crear una variable nueva!\r\nSolo dispondr\u00E1s de operaciones matem\u00E1ticas.\r\n\u00BFPodr\u00E1s hacerlo?\r\n"
+    },
+    {
+        "key": "Operations_Problem_Title",
+        "value": "Problema: Intercambio sin asignaci\u00F3n."
+    },
+    {
+        "key": "Options",
+        "value": "Opciones"
+    },
+    {
+        "key": "OtherOperations_Theory1",
+        "value": "Existen también operaciones de resta, multiplicación y división, que funcionan exactamente igual que la suma."
+    },
+    {
+        "key": "OtherOperations_Theory2",
+        "value": "La división, como peculiaridad, es división de enteros. Es decir, los resultados que devuelve no tienen decimales. Por ejemplo, la expresión “x= 10 / 3” da como resultado “3”, y no “3.33333” "
+    },
+    {
+        "key": "OtherOperations_Title",
+        "value": "El resto de operaciones"
+    },
+    {
+        "key": "PrintMethod",
+        "value": "Imprimir("
+    },
+    {
+        "key": "RandomVars_Result",
+        "value": "Resultado obtenido:"
+    },
+    {
+        "key": "RandomVars_Title",
+        "value": "Variables aleatorias"
+    },
+    {
+        "key": "Random_Var_Theory",
+        "value": "A partir de ahora, algunas variables se iniciarán con un valor aleatorio entre 1 y 6 (Representado con un dado). \r\nComo hemos dicho antes, los programas reciben unas entradas que se procesan para dar unas salidas. Pero dichas entradas no serán siempre iguales (Si no, el programa siempre daría el mismo resultado). Las variables aleatorias sirven para representar esta situación.\r\n"
+    },
+    {
+        "key": "Reset_Progress",
+        "value": "Reiniciar Progreso"
+    },
+    {
+        "key": "SandBox_Mode",
+        "value": "Modo de juego libre"
+    },
+    {
+        "key": "SameVarSum_Theory1",
+        "value": "Es posible almacenar el resultado de una operación en la misma variable que se usa como sumando. Esto se debe a que los elementos a cada lado de la operación, como ya hemos dicho, significan cosas distintas."
+    },
+    {
+        "key": "SameVarSum_Theory2",
+        "value": "La parte de la izquierda es donde se almacena el resultado, y la de la derecha de donde sacamos los datos para llevar a cabo la operación."
+    },
+    {
+        "key": "SameVarSum_Theory3",
+        "value": "Por ejemplo, “x=x+5” es una expresión que tiene sentido en programación. Si por ejemplo, el valor almacenado en “x” fuera “3”, al ejecutar dicha expresión, el valor almacenado pasaría a ser “8”."
+    },
+    {
+        "key": "SameVarSum_Title",
+        "value": "Operaciones con una única variable"
+    },
+    {
+        "key": "SubstractMethod",
+        "value": "Resta"
+    },
+    {
+        "key": "Success",
+        "value": "¡Ejercicio correcto!"
+    },
+    {
+        "key": "Sum_Theory1",
+        "value": "Las operaciones más básicas que pueden hacerse en la programación son las matemáticas (Suma, resta, multiplicación, división y módulo). A continuación aprenderás la operación suma."
+    },
+    {
+        "key": "Sum_Theory2",
+        "value": "Al igual que en la asignación, el resultado debe almacenarse en una variable. La diferencia es que la operación suma tiene dos entradas, una por cada sumando. El resultado de la suma se almacena en la variable indicada."
+    },
+    {
+        "key": "Sum_Title",
+        "value": "Otras operaciones: La suma"
+    },
+    {
         "key": "Test_Button",
         "value": "Test"
     },
     {
-        "key": "Test_Theory",
-        "value": "\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida ac diam eget interdum. Etiam consectetur elit ac sagittis aliquet. Sed facilisis ligula id augue aliquet sagittis. Nunc in nulla tellus. Fusce mi felis, facilisis a mauris non, scelerisque lacinia nulla. Phasellus tincidunt, urna iaculis tincidunt pretium, justo nisi interdum erat, id vulputate lorem lacus sit amet magna. Aenean iaculis viverra turpis, vitae fermentum lectus maximus vel. Mauris pulvinar nisi vitae nisi dapibus, a vestibulum metus consequat. Morbi fermentum suscipit dictum.\nIn hac habitasse platea dictumst. Proin eu ultrices mi, at suscipit odio. Mauris vitae mauris quam. Vivamus imperdiet diam ac mattis mattis. Duis scelerisque volutpat nisi, non semper urna convallis eu. Suspendisse sodales efficitur felis at tincidunt. Vivamus metus ex, fermentum vitae consectetur at, lobortis non felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse pellentesque metus sit amet lobortis luctus. Sed sit amet justo non leo molestie iaculis et at nisl. Nulla feugiat risus sed quam consequat ullamcorper. Nulla tristique, urna ac tristique efficitur, nisi lacus faucibus eros, blandit porttitor sem ex quis eros. Morbi in lectus nisl. Donec aliquam et nunc sit amet cursus."
+        "key": "Test_Theory_1",
+        "value": "\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida ac diam eget interdum. Etiam consectetur elit ac sagittis aliquet. Sed facilisis ligula id augue aliquet sagittis. Nunc in nulla tellus. "
+    },
+    {
+        "key": "Test_Theory_2",
+        "value": "\t Fusce mi felis, facilisis a mauris non, scelerisque lacinia nulla. Phasellus tincidunt, urna iaculis tincidunt pretium, justo nisi interdum erat, id vulputate lorem lacus sit amet magna. Aenean iaculis viverra turpis, vitae fermentum lectus maximus vel. Mauris pulvinar nisi vitae nisi dapibus, a vestibulum metus consequat. "
+    },
+    {
+        "key": "Test_Theory_3",
+        "value": "\t Morbi fermentum suscipit dictum.\nIn hac habitasse platea dictumst. Proin eu ultrices mi, at suscipit odio. Mauris vitae mauris quam. Vivamus imperdiet diam ac mattis mattis. Duis scelerisque volutpat nisi, non semper urna convallis eu. Suspendisse sodales efficitur felis at tincidunt. Vivamus metus ex, fermentum vitae consectetur at, lobortis non felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse pellentesque metus sit amet lobortis luctus. Sed sit amet justo non leo molestie iaculis et at nisl. Nulla feugiat risus sed quam consequat ullamcorper. Nulla tristique, urna ac tristique efficitur, nisi lacus faucibus eros, blandit porttitor sem ex quis eros. Morbi in lectus nisl. Donec aliquam et nunc sit amet cursus."
     },
     {
         "key": "Test_Title",
         "value": "Test"
+    },
+    {
+        "key": "U1_Lesson1",
+        "value": "Lección 1:¡Hola Mundo!"
+    },
+    {
+        "key": "U1_Lesson2",
+        "value": "Lección 2: Creando Variables"
+    },
+    {
+        "key": "U1_Lesson3",
+        "value": "Nueva Mecánica: Variables aleatorias"
+    },
+    {
+        "key": "U2_Lesson1",
+        "value": "Lección 1: Asignar valores"
+    },
+    {
+        "key": "U2_Lesson2",
+        "value": "Lección 2: Asignar valores con variables"
+    },
+    {
+        "key": "U2_Lesson3",
+        "value": "Problema Unidad 2"
+    },
+    {
+        "key": "U3_Lesson1",
+        "value": "Lección 1: Operación suma."
+    },
+    {
+        "key": "U3_Lesson2",
+        "value": "Lección 2: Suma de variables"
+    },
+    {
+        "key": "U3_Lesson3",
+        "value": "Lección 3: Operar con una sola variable"
+    },
+    {
+        "key": "U3_Lesson4",
+        "value": "Lección 4: El resto de operaciones"
+    },
+    {
+        "key": "U3_Lesson5",
+        "value": "Lección 5: Operación Módulo"
+    },
+    {
+        "key": "U3_Lesson6",
+        "value": "Problema Unidad 3"
+    },
+    {
+        "key": "Unit_1",
+        "value": "Unidad 1, las variables"
+    },
+    {
+        "key": "Unit_2",
+        "value": "Unidad 2, Asignación"
+    },
+    {
+        "key": "Unit_3",
+        "value": "Unidad 3, operaciones matemáticas"
+    },
+    {
+        "key": "Var_Assign_Problem_Formulation",
+        "value": "Para tu primer problema deber\u00E1s intercambiar los valores de dos variables \u201Cx\u201D e \u201Cy\u201D.\r\n\u00A1Es m\u00E1s dif\u00EDcil de lo que parece! \r\nNOTA: Recuerda que las instrucciones se resuelven de manera secuencial, con lo que no te servir\u00E1 hacer dos operaciones de asignaci\u00F3n para cambiar los valores, porque cuando se resuelva la primera, el valor original de la variable se perder\u00E1.\r\n\r\n"
+    },
+    {
+        "key": "Var_Assign_Problem_Title",
+        "value": "Problema de la unidad 1: Intercambiar dos variables"
+    },
+    {
+        "key": "Unlock_Progress",
+        "value": "Desbloquear todo el progreso"
+    },
+    {
+        "key": "VarSum_Theory",
+        "value": "Al igual que con el método asignación, puedes usar variables como sumandos de la operación. Cuando hacemos esto, usamos el valor que contiene la variable."
+    },
+    {
+        "key": "VarSum_Title",
+        "value": "Suma de variables"
+    },
+    {
+        "key": "Var_Assign_Theory",
+        "value": "Como ya hemos visto, podemos usar el nombre de una variable para acceder a su valor. Esto también puede usarse en una operación de asignación. Si decimos, por ejemplo, “x = y”, lo que estamos haciendo es guardar el valor de la variable y en x (Esto no cambia el contenido de y)"
+    },
+    {
+        "key": "Var_Assign_Theory_Title",
+        "value": "Asignación con variables"
+    },
+    {
+        "key": "Var_Creation_Access",
+        "value": "Como ya hemos dicho, las variables almacenan valores. Pero ¿Cómo accedemos a dichos valores? \r\n¡A través de su nombre! \r\nSiguiendo con la metáfora de la caja, cuando hagas referencia a la “etiqueta” (El nombre de la variable) tu programa leerá el “contenido” (El dato que tenga almacenado)\r\nA continuación crearás tu primera variable.\r\n"
+    },
+    {
+        "key": "Var_Creation_Instructions",
+        "value": "Para crear una variable, pulsa el botón “+” dentro de la caja de “Variables”, e introduce el nombre y valor de la variable (Un número entero de tu elección)\r\nLos nombres de variables no pueden ser números ni empezar por números. Tampoco pueden contener caracteres especiales\r\n(Por ejemplo, “27”, “1x” o “!!a!” no serían válidos como nombres de variables)\r\nPero si pueden tener letras y contener números\r\n(Por ejemplo, “x” o “x1” son nombres válidos de variables)\r\n"
+    },
+    {
+        "key": "Var_Creation_Intro",
+        "value": "A continuación, aprenderemos sobre las variables. \r\nPuedes pensar en una variable como una caja que tiene una etiqueta y en la que almacenamos información.\r\nAunque esta información, como verás más adelante, puede ser de todo tipo, por el momento nos centraremos en almacenar números.\r\n"
+    },
+    {
+        "key": "Var_Creation_Title",
+        "value": "Creando Variables"
+    },
+    {
+        "key": "Variables",
+        "value": "Variables"
+    },
+    {
+        "key": "Warning_Duplicate_Var",
+        "value": "El nombre de la variable ya existe"
+    },
+    {
+        "key": "Warning_Empty_Field",
+        "value": "Ningún campo puede estar vacio"
+    },
+    {
+        "key": "Warning_Empty_Returner",
+        "value": "Todos los valores vacíos (Marcados como \"?\") deben rellenarse para ejecutar el código"
+    },
+    {
+        "key": "Warning_Incorrect_Varname",
+        "value": "El nombre no puede ser un numero o empezar por un numero"
+    },
+    {
+        "key": "Warning_No_QMarks",
+        "value": "Para introducir un texto, debe estar entre comillas"
+    },
+    {
+        "key": "Warning_Required_Vars",
+        "value": "Debes crear las variables indicadas en el enunciado"
+    },
+    {
+        "key": "Warning_Value_Number",
+        "value": "El valor debe ser un número"
     },
     {
         "key": "Welcome_Theory",

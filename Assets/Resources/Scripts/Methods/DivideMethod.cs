@@ -2,22 +2,21 @@ using System.Diagnostics.Contracts;
 using TMPro;
 using UnityEngine;
 
-public class DivideMethod : MonoBehaviour, Method
+public class DivideMethod : Method
 {
-    public TextMeshProUGUI var;
-    public TextMeshProUGUI value1;
-    public TextMeshProUGUI value2;
-
-    public string onExecute()
+    public DivideMethod(string var, string[] values) : base(var, values)
     {
-        string varText = var.text;
-        string value1Text = value1.text;
-        string value2Text = value2.text;
-        return varText + " = math.floor(" + value1Text + " / " + value2Text + ") \n";
+        this.opSymbol = "/";
     }
 
-    public void Destroy()
+    private void Awake()
     {
-        Destroy(gameObject);
+        this.opSymbol = "/";
+    }
+
+    public override string onExecute()
+    {
+        string result = var.getText() + " = math.floor(" + values[0].getText() + " " + opSymbol + " " + values[1].getText() + ")\n";
+        return result;
     }
 }

@@ -10,7 +10,8 @@ public class Returner : MonoBehaviour
     private UnityEngine.UI.Button button;
     private TextMeshProUGUI text;
     private UIManager uiManager;
-    public Boolean isVar;
+    private Boolean isVar;
+    public Boolean isOut;
 
     void Awake()
     {
@@ -28,5 +29,25 @@ public class Returner : MonoBehaviour
     public void CambiarTexto(string newText)
     {
         text.text = newText;
+    }
+
+    public string getText()
+    {
+        return text.text;
+    }
+
+    public void setText(string newText)
+    {
+        text.text = newText;
+    }
+
+    public void setIsVar(Boolean isVar)
+    {
+        this.isVar = isVar;
+    }
+
+    public bool getIsVar()
+    {
+        return isVar;
     }
 }

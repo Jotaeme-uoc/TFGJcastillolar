@@ -1,14 +1,20 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
     private GameObject[] methods;
+    public Button createVarButton;
+    public Button manualValueButton;
+    public Button createMethodButton;
     public GameObject variables;
+    public GameObject buttonContainer;
     public GameObject code;
     public GameObject var;
     public GameObject optionPrefab;
@@ -19,11 +25,18 @@ public class UIManager : MonoBehaviour
     public GameObject varCreationPopUp;
     public GameObject methodSelectionPopUp;
     public GameObject manualValuePopUp;
+    public GameObject resultPopUp;
     private Returner currentReturner;
     public GameObject PopUpPanel;
     public TextMeshProUGUI message;
+    public Button printMehtodButton;
+    public ExcerciseTextManager exerciseTextManager;
+    IExcerciseSceneConfig sceneConfig;
 
-
+    public void activateResultButtons()
+    {
+        buttonContainer.SetActive(true);
+    }
     public void changeCurrentReturnerText(string newText)
     {
         if (currentReturner != null)
@@ -35,13 +48,17 @@ public class UIManager : MonoBehaviour
     //si el valor no es un numero, devuelve false y muestra el mensaje de error en el warning
     private bool checkIsNumber(TMP_Text warning, string value)
     {
+        if (sceneConfig.stringsAllowed)
+        {
+            return true;
+        }
         if (int.TryParse(value, out int numero))
         {
             return true;
         }
         else
         {
-            warning.text = "El valor debe ser un numero";
+            warning.text = exerciseTextManager.getText("Warning_Value_Number");
             return false;
         }
 
@@ -56,7 +73,7 @@ public class UIManager : MonoBehaviour
         }
         else
         {
-            warning.text = "El nombre no puede ser un numero o empezar por un numero";
+            warning.text = exerciseTextManager.getText("Warning_Incorrect_Varname");
             return false;
         }
     }
@@ -69,7 +86,7 @@ public class UIManager : MonoBehaviour
         }
         else
         {
-            warning.text = "Ningún campo puede estar vacio";
+            warning.text = exerciseTextManager.getText("Warning_Empty_Field");
             return false;
         }
 
@@ -80,27 +97,74 @@ public class UIManager : MonoBehaviour
         List<string> variablesNames = getAllVariables();
         if (!variablesNames.Contains(varName))
         {
-            Debug.Log("El nombre de la variable no existe");
             return true;
         }
         else
         {
-            warning.text = "El nombre de la variable ya existe";
+            warning.text = exerciseTextManager.getText("Warning_Duplicate_Var");
             return false;
         }
     }
 
     public bool checkNoReturnerIsEmpty(){
-        String message = "Todos los valores vacíos (Marcados como \"?\") deben rellenarse para ejecutar el código";
+        String message = exerciseTextManager.getText("Warning_Empty_Returner");
         GameObject[] returners = GameObject.FindGameObjectsWithTag("Returner");
         Debug.Log(returners.Length);
         foreach (GameObject returner in returners)
         {
             if (returner.GetComponentInChildren<TextMeshProUGUI>().text == "?")
             {
-                mostrarResultado(message);
+                mostrarResultado(message, false);
                 return false;
             }            
+        }
+        return true;
+    }
+    public bool checkqMarks(TMP_Text warning, string value)
+    {
+        if (float.TryParse(value, out float numero))
+        {
+            return true;
+        }
+        else
+        {
+            if (value[0] == '"' && value[value.Length - 1] == '"' )
+            {
+                return true;
+            }
+            else
+            {
+                warning.text = exerciseTextManager.getText("Warning_No_QMarks");
+                return false;
+            }
+        }
+    }
+    public bool checkRequiredVars()
+    {
+        String message = exerciseTextManager.getText("Warning_Required_Vars");
+        GameObject[] vars = GameObject.FindGameObjectsWithTag("Var");
+        Dictionary<string, string> varsToCheck = sceneConfig.varsToCheck;
+        Dictionary<string, string> createdVars = new Dictionary<string, string>();
+        Debug.Log("Variables Creadas");
+        foreach (GameObject var in vars)
+        {
+            Var varScript = var.GetComponent<Var>();
+            Debug.Log(varScript.getName());
+            createdVars.Add(varScript.getName(), varScript.getValue());
+        }
+        foreach (KeyValuePair<string, string> kvp in varsToCheck)
+        {
+            if (!createdVars.ContainsKey(kvp.Key) && kvp.Key!="0")
+            {
+                mostrarResultado(message, false);
+                return false;
+            }
+            if (!createdVars.ContainsValue(kvp.Value) && kvp.Value!="a")
+            {
+                Debug.Log("No se ha encontrado el valor " + kvp.Value);
+                mostrarResultado(message, false);
+                return false;
+            }
         }
         return true;
     }
@@ -114,20 +178,104 @@ public class UIManager : MonoBehaviour
             GameObject methodOption = Instantiate(optionPrefab, methodListContainer.transform);
             TextMeshProUGUI methodOptionText = methodOption.GetComponentInChildren<TextMeshProUGUI>();
             Button methodOptionButton = methodOption.GetComponentInChildren<Button>();
-            methodOptionText.text = method.name;
+            methodOptionText.text = exerciseTextManager.getText(method.name);
             methodOptionButton.onClick.AddListener(() => methodSelected(method));
         }       
     }
     public void createVar()
     {
-        TMP_InputField[] inputFields = varCreationPopUp.GetComponentsInChildren<TMP_InputField>();
-        foreach (TMP_InputField inputField in inputFields)
+        int varCount = variables.transform.childCount - 2;
+        if (varCount < sceneConfig.varLimit)
         {
-            inputField.text = "";
+            TMP_InputField[] inputFields = varCreationPopUp.GetComponentsInChildren<TMP_InputField>();
+            foreach (TMP_InputField inputField in inputFields)
+            {
+                inputField.text = "";
+            }
+            varCreationPopUp.SetActive(true);
         }
-        varCreationPopUp.SetActive(true);
+        else
+        {
+            return;
+        }
     }
 
+    private void enableCreateButton()
+    {
+        if (!sceneConfig.canCreateVariables)
+        {
+            createVarButton.interactable = false;
+        }
+        if (!sceneConfig.canCreateMethods)
+        {
+            createMethodButton.interactable = false;
+        }
+    }
+    private void enableManualValues()
+    {
+        if (!sceneConfig.manualValuesAllowed)
+        {
+            manualValueButton.interactable = false;
+        }
+    }
+    public void initialVars()
+    {
+        Dictionary<string, (string val, bool isRandom)> vars = sceneConfig.vars;
+        foreach (KeyValuePair<string, (string val, bool isRandom)> kvp in vars)
+        {
+            GameObject newVar = Instantiate(var, variables.transform);
+            Var varScript = newVar.GetComponent<Var>();
+            varScript.setName(kvp.Key);
+            varScript.setValue(kvp.Value.val);
+            varScript.setAsInitial(kvp.Value.isRandom);
+        }
+    }
+
+    private void initialMethods()
+    {
+        Dictionary<string, string[]> initMethods = sceneConfig.methods;
+        foreach (KeyValuePair<string, string[]> kvp in initMethods)
+        {
+            string varName = kvp.Value[0];
+            string[] values = kvp.Value[1..];
+            switch (kvp.Key)
+            {
+                case "AddMethod":
+                    GameObject addMethod = Instantiate(methods[0], code.transform);
+                    addMethod.GetComponent<AddMethod>().setAsInitial(kvp.Value);
+                    moveToPenultimate(addMethod.GetComponent<Method>());
+                    break;
+                case "AssignMethod":
+                    GameObject assignMethod = Instantiate(methods[1], code.transform);
+                    assignMethod.GetComponent<AssignMethod>().setAsInitial(kvp.Value);
+                    moveToPenultimate(assignMethod.GetComponent<Method>());
+                    break;
+                case "DivideMethod":
+                    GameObject divideMethod = Instantiate(methods[2], code.transform);
+                    divideMethod.GetComponent<DivideMethod>().setAsInitial(kvp.Value);
+                    moveToPenultimate(divideMethod.GetComponent<Method>());
+                    break;
+                case "ModMethod":
+                    GameObject modMethod = Instantiate(methods[3], code.transform);
+                    modMethod.GetComponent<ModMethod>().setAsInitial(kvp.Value);
+                    moveToPenultimate(modMethod.GetComponent<Method>());
+                    break;
+                case "MultiplyMethod":
+                    GameObject multiplyMethod = Instantiate(methods[4], code.transform);
+                    multiplyMethod.GetComponent<MultiplyMethod>().setAsInitial(kvp.Value);
+                    moveToPenultimate(multiplyMethod.GetComponent<Method>());
+                    break;
+                case "SubstractMethod":
+                    GameObject subtractMethod = Instantiate(methods[5], code.transform);
+                    subtractMethod.GetComponent<SubstractMethod>().setAsInitial(kvp.Value);
+                    moveToPenultimate(subtractMethod.GetComponent<Method>());
+                    break;
+                default:
+                    Debug.Log("No se ha encontrado el metodo " + kvp.Key);
+                    break;
+            }
+        }
+    }
     private void cleanSelector(GameObject selector)
     {
         foreach (Transform child in selector.transform)
@@ -136,6 +284,16 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    private void fillPrintMethod()
+    {
+        string printMethodInitialValue = sceneConfig.printMethodInitialValue;
+        if (!string.IsNullOrEmpty(printMethodInitialValue))
+        {
+            printMehtodButton.GetComponentInChildren<TextMeshProUGUI>().text = printMethodInitialValue;
+            printMehtodButton.interactable = false;
+        }
+        
+    }
     private TMP_Text getWarningText(GameObject popUp)
     {
         TMP_Text warning = null;
@@ -176,9 +334,11 @@ public class UIManager : MonoBehaviour
         TMP_Text warning = getWarningText(manualValuePopUp);
         TMP_InputField inputField = manualValuePopUp.GetComponentInChildren<TMP_InputField>();
         string value = inputField.text;
-        if (checkIsNotEmpty(warning, value) && checkIsNumber(warning, value))
+        if (checkIsNotEmpty(warning, value) && checkIsNumber(warning, value) && checkqMarks(warning, value))
         {
+            currentReturner.setIsVar(false);
             currentReturner.CambiarTexto(value);
+            inputField.text = "";
             manualValuePopUp.SetActive(false);
             warning.gameObject.SetActive(false);
         }
@@ -192,22 +352,50 @@ public class UIManager : MonoBehaviour
     public void methodSelected(GameObject method)
     {
         GameObject newMethod = Instantiate(method, code.transform);
-        int childcount = code.transform.childCount;
-        int penultimateIndex = Math.Max(0, childcount - 2);
-        newMethod.transform.SetSiblingIndex(penultimateIndex);
+        moveToPenultimate(newMethod.GetComponent<Method>());
         methodSelectionPopUp.SetActive(false);
     }
 
-    public void mostrarResultado(string mensaje)
+    public void mostrarResultado(string mensaje, Boolean success)
     {
-        PopUpPanel.SetActive(true);
-        message.text = mensaje;
+        resultPopUp.SetActive(true);
+        TextMeshProUGUI resultText = resultPopUp.GetComponentInChildren<TextMeshProUGUI>();
+        if (success)
+        {
+            resultText.text = exerciseTextManager.getText("Success");
+            activateResultButtons();
+        }
+        else
+        {
+            resultText.text = exerciseTextManager.getText("Fail");
+        }
+            
+        resultText.text += "\n" + mensaje;
     }
 
+    public void moveToPenultimate(Method newMethod)
+    {
+        int childcount = code.transform.childCount;
+        int penultimateIndex = Math.Max(0, childcount - 2);
+        newMethod.transform.SetSiblingIndex(penultimateIndex);
+    }
+
+    
+    public void setAvailableMethods()
+    {
+        string[] availableMethods = sceneConfig.availableMethods;
+        foreach (GameObject method in methods)
+        {
+            if (!availableMethods.Contains(method.name))
+            {
+                methods = methods.Where(m => m != method).ToArray();
+            }
+        }
+    }
     public void setCurrentReturner(Returner returner)
     {
         currentReturner = returner;
-        if (returner.isVar)
+        if (returner.isOut)
         {
             varSelectorPopUp.SetActive(true);
             varMenu();
@@ -221,12 +409,20 @@ public class UIManager : MonoBehaviour
     public void showTutorial()
     {
         PopUpPanel.SetActive(true);
-        message.text = "Para crear una variable, pulsa el símbolo + del apartado Variables.\nPara crear un método, pulsa el símbolo + del apartado métodos y selecciona qué método quieres crear.\nPara ejecutar el código, pulsa el botón de play en la parte inferior.\nLas interrogaciones son valores sin asignar, y pueden ser variables o números. Es necesario rellenarlos antes de ejecutar.\nEl método print es la salida del programa y muestra el valor que le pases por pantalla.";
+        message.text = exerciseTextManager.getText($"{sceneConfig.formulation}");
     }
 
     private void Start()
     {
         methods = Resources.LoadAll<GameObject>("Prefabs/Methods");
+        sceneConfig = (IExcerciseSceneConfig)SceneConfigLoader.Load(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+        showTutorial();
+        initialVars();
+        initialMethods();
+        setAvailableMethods();
+        enableCreateButton();
+        enableManualValues();
+        fillPrintMethod();
     }
 
     public void varMenu()
@@ -246,11 +442,10 @@ public class UIManager : MonoBehaviour
 
     public void varSelected(string varName)
     {
+        currentReturner.setIsVar(true);
         changeCurrentReturnerText(varName);
         varSelectorPopUp.SetActive(false);
     }
-
-    
 
     public void varValuesAccepted()
     {
@@ -275,12 +470,4 @@ public class UIManager : MonoBehaviour
         }
 
     }
-
-
-
-
-
-
-
-
 }

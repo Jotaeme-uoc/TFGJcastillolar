@@ -9,14 +9,113 @@ EditorBuildSettings:
     path: Assets/Scenes/Pantalla de Inicio.unity
     guid: 1fd099874c9e95245835b41119a6c82e
   - enabled: 1
+    path: Assets/Scenes/LessonSelect.unity
+    guid: 5ef1aaa1f8ce7164386d652040860cec
+  - enabled: 1
+    path: Assets/Scenes/HelloWorldTheory.unity
+    guid: b0038c28dd9f2e04ab0ce3fed32c94a7
+  - enabled: 1
+    path: Assets/Scenes/HelloWorldExercise.unity
+    guid: 2b219456429563848a958981f3992bc0
+  - enabled: 1
+    path: Assets/Scenes/HelloWorldExercise2.unity
+    guid: 177ff93587e9fff46a641ac4d5805920
+  - enabled: 1
+    path: Assets/Scenes/VarCreationScene.unity
+    guid: 708cfed906b53c44d87d66957147f129
+  - enabled: 1
+    path: Assets/Scenes/VarCreationExercise1.unity
+    guid: 604d5fc15ec80e1498d5eabe6f3cde91
+  - enabled: 1
+    path: Assets/Scenes/Var_Creation_Exercise2.unity
+    guid: 3905da08a1523a545960d857d5d8164c
+  - enabled: 1
+    path: Assets/Scenes/Random_Vars_Theory.unity
+    guid: 6e378fd37459140449b6ca0be418b17b
+  - enabled: 1
+    path: Assets/Scenes/Random_Vars_Exercise.unity
+    guid: a4caf1edcbc385d42b1460a348956820
+  - enabled: 1
+    path: Assets/Scenes/Assign_Values_Theory.unity
+    guid: 94ebd410260a4dd4c9ac4ee047055286
+  - enabled: 1
+    path: Assets/Scenes/Assign_Values_Exercise.unity
+    guid: b8b62271b2052ad4abfdcd16b160f93d
+  - enabled: 1
+    path: Assets/Scenes/Var_Assign_Theory.unity
+    guid: f01ed340439e0e54dae6542b06e4a79c
+  - enabled: 1
+    path: Assets/Scenes/Var_Assign_Exercise.unity
+    guid: 97a3512259f67464f9b0b879d8f88afa
+  - enabled: 1
+    path: Assets/Scenes/Var_Assign_Problem_Formulation.unity
+    guid: 538230b4effc3db4a9e055a542d48a94
+  - enabled: 1
+    path: Assets/Scenes/Var_Assign_Problem.unity
+    guid: 9146ee9e69b11064583d363985b01e4a
+  - enabled: 1
+    path: Assets/Scenes/Sum_Operation_Theory.unity
+    guid: e0d3ecd3383459141b24c185ed50e56b
+  - enabled: 1
+    path: Assets/Scenes/Sum_Operation_Exercise.unity
+    guid: bc96ada0ac5494d4bb4c61afa88d2cc9
+  - enabled: 1
+    path: Assets/Scenes/Var_Sum_Theory.unity
+    guid: 5ab64e1f59a69d3409040c602f6128b7
+  - enabled: 1
+    path: Assets/Scenes/VarSum_Exercise.unity
+    guid: f5d031c932acbe54eb151e668f923b81
+  - enabled: 1
+    path: Assets/Scenes/SameVarSum_Theory.unity
+    guid: e3bffb125fdfc66418e40f38322346b4
+  - enabled: 1
+    path: Assets/Scenes/SameVarSum_Exercise.unity
+    guid: 058575d8cd038124d98d1221f1be6465
+  - enabled: 1
+    path: Assets/Scenes/SameVarSum_Exercise2.unity
+    guid: dda746762f3210b4299b1ac9a7428074
+  - enabled: 1
+    path: Assets/Scenes/OtherOperations_Theory.unity
+    guid: a6b9f589903c8c746b5ac027577317d6
+  - enabled: 1
+    path: Assets/Scenes/OtherOperations_Exercise1.unity
+    guid: 9a03ad9c7db4fb447b7769b1146d329e
+  - enabled: 1
+    path: Assets/Scenes/OtherOperations_Exercise2.unity
+    guid: d2a510d6e626fc6448bd1d02cc3ce263
+  - enabled: 1
+    path: Assets/Scenes/OtherOperations_Exercise3.unity
+    guid: e452a494546e2b047a832ebc0e276c2e
+  - enabled: 1
+    path: Assets/Scenes/OtherOperations_Exercise4.unity
+    guid: 4fc8b034f6ba0154a8c31fd474f0991c
+  - enabled: 1
+    path: Assets/Scenes/ModMethod_Theory.unity
+    guid: 75e5c70261a3b7b48bb0cd08a50994fd
+  - enabled: 1
+    path: Assets/Scenes/ModMethod_Exercise1.unity
+    guid: 532047b6757492f41ab965b36488e87e
+  - enabled: 1
+    path: Assets/Scenes/ModMethod_Exercise2.unity
+    guid: db1cb0cb2ff407344b50119c3de1930e
+  - enabled: 1
+    path: Assets/Scenes/ModMethod_Exercise3.unity
+    guid: d264168eca72c704982df2c293405f55
+  - enabled: 1
+    path: Assets/Scenes/Operations_Problem_Formulation.unity
+    guid: 79349ef53a1436844a1c1cca9c62a1dd
+  - enabled: 1
+    path: Assets/Scenes/Operations_Problem.unity
+    guid: af4d1879871c9364e89c445f492ebe02
+  - enabled: 1
+    path: Assets/Scenes/Game_End.unity
+    guid: 3dd74712a415ecf47b0e46672d30e2a7
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/TheoryScene.unity
     guid: d4de32ff23b18ee43ad851b84f052083
-  - enabled: 1
-    path: Assets/Scenes/HelloWorldTheory.unity
-    guid: b0038c28dd9f2e04ab0ce3fed32c94a7
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

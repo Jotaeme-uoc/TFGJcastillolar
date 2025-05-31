@@ -1,6 +1,8 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using UnityEngine.Networking;
 
 public class LocalizationManager : MonoBehaviour
 {
@@ -13,7 +15,7 @@ public class LocalizationManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            LoadLocalization("es");
+            StartCoroutine(LoadLocalization("es")); // Importante: ahora es una corrutina
         }
         else
         {
@@ -21,27 +23,45 @@ public class LocalizationManager : MonoBehaviour
         }
     }
 
-    public void LoadLocalization(string languageCode)
+    public IEnumerator LoadLocalization(string languageCode)
     {
-        string path = Path.Combine(Application.streamingAssetsPath, languageCode + ".json");
+        string fileName = languageCode + ".json";
+        string path = Path.Combine(Application.streamingAssetsPath, fileName);
 
+        string json = null;
+
+#if UNITY_ANDROID && !UNITY_EDITOR
+        UnityWebRequest www = UnityWebRequest.Get(path);
+        yield return www.SendWebRequest();
+
+        if (www.result != UnityWebRequest.Result.Success)
+        {
+            Debug.LogError("Error al cargar localización: " + www.error);
+            yield break;
+        }
+
+        json = www.downloadHandler.text;
+#else
         if (File.Exists(path))
         {
-            string json = File.ReadAllText(path);
-            LocalizationEntry[] entries = JsonHelper.FromJson<LocalizationEntry>(json);
-
-            localizedTexts = new Dictionary<string, string>();
-            foreach (var entry in entries)
-            {
-                localizedTexts[entry.key] = entry.value;
-            }
-
-            Debug.Log("Claves cargadas: " + localizedTexts.Count);
+            json = File.ReadAllText(path);
         }
         else
         {
             Debug.LogError("Archivo de localización no encontrado: " + path);
+            yield break;
         }
+#endif
+
+        LocalizationEntry[] entries = JsonHelper.FromJson<LocalizationEntry>(json);
+        localizedTexts = new Dictionary<string, string>();
+
+        foreach (var entry in entries)
+        {
+            localizedTexts[entry.key] = entry.value;
+        }
+
+        Debug.Log("Localización cargada con éxito.");
     }
 
     public string GetText(string key)
