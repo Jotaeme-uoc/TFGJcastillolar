@@ -5160,7 +5160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e631dd65ec52cbe4488e3ef01bdd00fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progressRequired: 16
+  progressRequired: 15
   lessonName: Unit_3
 --- !u!1 &1607404802
 GameObject:
@@ -6259,7 +6259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e631dd65ec52cbe4488e3ef01bdd00fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progressRequired: 11
+  progressRequired: 9
   lessonName: Unit_2
 --- !u!1 &2115563811
 GameObject:
