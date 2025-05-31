@@ -26,6 +26,7 @@ public class CustomScriptRandomVars : MonoBehaviour, ICustomScript
         else
         {
             uiManager.mostrarResultado(exerciseTextManager.getText("RandomVars_Result") + logicManager.randomNumber(), true);
+            logicManager.saveProgress();
         } 
             
     }

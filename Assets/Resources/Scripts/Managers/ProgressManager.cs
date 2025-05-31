@@ -11,6 +11,7 @@ public class ProgressManager : MonoBehaviour
     {
         progress = PlayerPrefs.GetInt("Progress");
         progressObjects = GameObject.FindGameObjectsWithTag("ProgressObject");
+        Debug.Log("Current Progress: " + progress);
         foreach (GameObject progressObject in progressObjects)
         {
             Debug.Log("Progress Object: " + progressObject.name);

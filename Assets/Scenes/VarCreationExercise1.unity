@@ -5589,6 +5589,7 @@ MonoBehaviour:
   UIManager: {fileID: 431947633}
   toPrint: {fileID: 115247399}
   exerciseTextManager: {fileID: 1418029992}
+  logicManager: {fileID: 1295120146}
 --- !u!4 &983411784
 Transform:
   m_ObjectHideFlags: 0

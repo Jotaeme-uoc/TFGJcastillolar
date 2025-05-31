@@ -8076,6 +8076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UIManager: {fileID: 431947633}
   toPrint: {fileID: 115247399}
+  logicManager: {fileID: 1295120146}
 --- !u!4 &1387148286
 Transform:
   m_ObjectHideFlags: 0

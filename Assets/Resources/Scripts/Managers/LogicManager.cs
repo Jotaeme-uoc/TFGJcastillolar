@@ -156,7 +156,7 @@ public class LogicManager : MonoBehaviour
         return random;
     }
 
-    private void saveProgress()
+    public void saveProgress()
     {
         int progress = PlayerPrefs.GetInt("Progress");
         if (progress < UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex)

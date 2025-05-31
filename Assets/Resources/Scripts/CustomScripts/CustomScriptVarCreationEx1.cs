@@ -10,6 +10,7 @@ public class CustomScriptVarCreationExercise1 : MonoBehaviour, ICustomScript
     private Var var;
     private UIManager uiManager;
     public ExcerciseTextManager exerciseTextManager;
+    public LogicManager logicManager;
 
     private void Start()
     {
@@ -29,6 +30,7 @@ public class CustomScriptVarCreationExercise1 : MonoBehaviour, ICustomScript
         if (var.getName() == toPrint.text)
         {
             uiManager.mostrarResultado(var.getValue(), true);
+            logicManager.saveProgress();
         }
         else
         {

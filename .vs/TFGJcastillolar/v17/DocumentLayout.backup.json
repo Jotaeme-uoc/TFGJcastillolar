@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|c:\\users\\xus93\\documents\\github\\tfgjcastillolar\\assets\\resources\\scripts\\sceneconfig\\isceneconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\scripts\\sceneconfig\\isceneconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\assets\\resources\\scripts\\managers\\logicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\scripts\\managers\\logicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\assets\\resources\\scripts\\sceneconfig\\sceneconfigloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\scripts\\sceneconfig\\sceneconfigloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\assets\\resources\\scripts\\customscripts\\customexecutervarassignproblem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\scripts\\customscripts\\customexecutervarassignproblem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\assets\\resources\\scripts\\sceneconfig\\sceneconfigloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\scripts\\sceneconfig\\sceneconfigloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|c:\\users\\xus93\\documents\\github\\tfgjcastillolar\\assets\\resources\\scripts\\managers\\theorytextmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\scripts\\managers\\theorytextmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|c:\\users\\xus93\\documents\\github\\tfgjcastillolar\\assets\\resources\\scripts\\sceneconfig\\isceneconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\scripts\\sceneconfig\\isceneconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\assets\\resources\\scripts\\managers\\logicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|solutionrelative:assets\\resources\\scripts\\managers\\logicmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BEB48E18-D0ED-361B-4417-E34886E2C12E}|Assembly-CSharp.csproj|C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\assets\\resources\\localization\\jsonhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,6 +39,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "TheoryTextManager.cs",
+              "DocumentMoniker": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Resources\\Scripts\\Managers\\TheoryTextManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Resources\\Scripts\\Managers\\TheoryTextManager.cs",
+              "ToolTip": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Resources\\Scripts\\Managers\\TheoryTextManager.cs",
+              "RelativeToolTip": "Assets\\Resources\\Scripts\\Managers\\TheoryTextManager.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAASwBcAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T10:26:56.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "CustomExecuterVarAssignProblem.cs",
               "DocumentMoniker": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Resources\\Scripts\\CustomScripts\\CustomExecuterVarAssignProblem.cs",
               "RelativeDocumentMoniker": "Assets\\Resources\\Scripts\\CustomScripts\\CustomExecuterVarAssignProblem.cs",
@@ -42,11 +59,12 @@
               "RelativeToolTip": "Assets\\Resources\\Scripts\\CustomScripts\\CustomExecuterVarAssignProblem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T17:33:20.845Z"
+              "WhenOpened": "2025-05-30T17:33:20.845Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "LogicManager.cs",
               "DocumentMoniker": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Resources\\Scripts\\Managers\\LogicManager.cs",
               "RelativeDocumentMoniker": "Assets\\Resources\\Scripts\\Managers\\LogicManager.cs",
@@ -58,32 +76,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "SceneConfigLoader.cs",
               "DocumentMoniker": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Resources\\Scripts\\SceneConfig\\SceneConfigLoader.cs",
               "RelativeDocumentMoniker": "Assets\\Resources\\Scripts\\SceneConfig\\SceneConfigLoader.cs",
               "ToolTip": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Resources\\Scripts\\SceneConfig\\SceneConfigLoader.cs",
               "RelativeToolTip": "Assets\\Resources\\Scripts\\SceneConfig\\SceneConfigLoader.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCgAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCoAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T11:52:53.642Z"
+              "WhenOpened": "2025-05-30T11:52:53.642Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ISceneConfig.cs",
               "DocumentMoniker": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Resources\\Scripts\\SceneConfig\\ISceneConfig.cs",
               "RelativeDocumentMoniker": "Assets\\Resources\\Scripts\\SceneConfig\\ISceneConfig.cs",
               "ToolTip": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Resources\\Scripts\\SceneConfig\\ISceneConfig.cs",
               "RelativeToolTip": "Assets\\Resources\\Scripts\\SceneConfig\\ISceneConfig.cs",
-              "ViewState": "AgIAANwCAAAAAAAAAAAUwN8CAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAN8CAAAAAAAAAAAQwN8CAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T11:52:52.825Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "JsonHelper.cs",
               "DocumentMoniker": "C:\\Users\\xus93\\Documents\\GitHub\\TFGJcastillolar\\Assets\\Resources\\Localization\\JsonHelper.cs",
               "RelativeDocumentMoniker": "Assets\\Resources\\Localization\\JsonHelper.cs",

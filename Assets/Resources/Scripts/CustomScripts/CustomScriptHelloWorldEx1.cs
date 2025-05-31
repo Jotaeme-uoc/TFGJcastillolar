@@ -7,7 +7,7 @@ public class CustomExecuterExercise1 : MonoBehaviour, ICustomScript
     public GameObject UIManager;
     public TextMeshProUGUI toPrint;
     private UIManager uiManager;
-
+    public LogicManager logicManager;
     private void Start()
     {
         uiManager = UIManager.GetComponent<UIManager>();
@@ -15,6 +15,7 @@ public class CustomExecuterExercise1 : MonoBehaviour, ICustomScript
     public void Execute()
     {
         uiManager.mostrarResultado(toPrint.text, true);
+        logicManager.saveProgress();
     }
 
     
